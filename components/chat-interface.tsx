@@ -890,7 +890,7 @@ export function ChatInterface({
   return (
     <div className="flex flex-col h-full chat-background relative">
       {/* Chat Header - Fixed position */}
-      <div className="fixed top-0 left-0 right-0 border-b border-border p-4 flex items-center justify-between bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-40">
+      <div className="border-b border-border p-4 flex items-center justify-between bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-40">
         <div className="flex items-center gap-2">
           <Button
             variant="ghost"
@@ -919,7 +919,7 @@ export function ChatInterface({
       {/* Messages Container - Fixed position below header */}
       <div 
         ref={messageContainerRef}
-        className="flex-1 overflow-y-auto p-4 pt-24 pb-28 space-y-4 scrollbar-w-2 scrollbar-track-blue-lighter scrollbar-thumb-blue scrollbar-thumb-rounded"
+        className="flex-1 overflow-y-auto p-4 pt-16 pb-28 space-y-4 scrollbar-w-2 scrollbar-track-blue-lighter scrollbar-thumb-blue scrollbar-thumb-rounded"
       >
         <div className="max-w-2xl mx-auto w-full">
           {filteredMessages.map((message, idx) => {
